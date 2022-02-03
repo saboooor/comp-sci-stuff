@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>rgb bruh</title>
+        <link rel="stylesheet" href="./bruh.css" type="text/css">
+        <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/42164502" type="image/x-icon">
+    </head>
+    <body>
+        <h1>rgb</h1>
+        <p>wooooo colors <span id="mono">rgb(red, green, blue)</span></p>
+        <p>rgb values are between <em>0-255</em></p>
+
+        <hr>
+        <h3>make color</h3>
+        <p>This changes the background gradient of the page</p>
+        <p>red <input id="red" type="range" max="255" value="128" oninput="updateRGB()"></p>
+        <p id="rval"></p>
+        <p>green <input id="green" type="range" max="255" value="64" oninput="updateRGB()"></p>
+        <p id="gval"></p>
+        <p>blue <input id="blue" type="range" max="255" value="64" oninput="updateRGB()"></p>
+        <p id="bval"></p>
+        <p id="rgb"></p>
+        <hr>
+
+        <img src="./img/yes.gif" alt="yum">
+    </body>
+</html>
+<script src="./rgb.js"></script>

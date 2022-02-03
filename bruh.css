@@ -13,6 +13,7 @@ h1 {
 
 p {
     font-size: 24px;
+    margin: 10px
 }
 
 hr {
@@ -26,4 +27,42 @@ hr {
     font-size: 15px;
     color: #ffffff99;
     margin: 30px;
+}
+
+#mono {
+    color: #ffffff99;
+}
+
+#rval {
+    color: #ffaaaa99;
+}
+#gval {
+    color: #aaffaa99;
+}
+#bval {
+    color: #aaaaff99;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 70%;
+    height: 10px;
+    opacity: 0.6;
+    border-radius: 14px;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+input[type=range]#red {
+    background: #ffaaaa99;
+}
+input[type=range]#green {
+    background: #aaffaa99;
+}
+input[type=range]#blue {
+    background: #aaaaff99;
+}
+
+input[type=range]:hover {
+    opacity: 1;
 }
