@@ -1,15 +1,14 @@
 // Update the mad lib
 function updateMadLib() {
     // Get the values
-    const plrnoun = document.getElementById('plrnoun').value;
-    const adj = document.getElementById('adj').value;
-    const verb = document.getElementById('verb').value;
+    const subject = document.getElementById('subject').value;
+    const color = document.getElementById('color').value;
     const noun = document.getElementById('noun').value;
 
     // Set the background color and update the rgb text under the inputs
-    const result = `"There are too many ${plrnoun ? plrnoun : '_____'} on this ${adj ? adj : '_____'} airplane!" I screamed. "Somebody has to ${verb ? verb : '_____'} on the ${noun ? noun : '_____'} to solve this problem!"`;
+    const result = `"In ${subject ? subject : '_____'} class, our teacher was wearing a ${color ? color : '_____'} ${noun ? noun : '_____'}."`;
     document.getElementById('output').innerText = result;
 }
 
 // Call the function on launch
-updateRGB()
+updateMadLib()
