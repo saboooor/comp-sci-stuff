@@ -4,4 +4,4 @@ let focus = prompt("what do you want from me");
 
 // Set data in the page
 document.getElementById('name').innerText = name;
-document.getElementById('no').innerText = focus;
+document.getElementById('focus').innerText = focus;
