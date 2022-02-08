@@ -5,7 +5,7 @@ function updateMadLib() {
     const color = document.getElementById('color').value;
     const noun = document.getElementById('noun').value;
 
-    // Set the background color and update the rgb text under the inputs
+    // Set the output
     const result = `"In ${subject ? subject : '_____'} class, our teacher was wearing a ${color ? color : '_____'} ${noun ? noun : '_____'}."`;
     document.getElementById('output').innerText = result;
 }
