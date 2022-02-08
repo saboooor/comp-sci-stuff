@@ -14,15 +14,14 @@
         <p class="italic">click <a href="https://www.mathsisfun.com/geometry/trapezoid.html">here</a> to learn more about trapezoids</p>
         
         <hr>
-        <h3>input</h3>
-        <p>enter length of side a <input id="plrnoun" oninput="updateMadLib()"></p>
-        <p>enter length of side b <input id="adj" oninput="updateMadLib()"></p>
-        <p>enter height of trapezoid <input id="verb" oninput="updateMadLib()"></p>
-        <button>Calculate</button>
+        <h3>input in cm</h3>
+        <p>enter length of side a <input id="sideA" oninput="updateArea()"></p>
+        <p>enter length of side b <input id="sideB" oninput="updateArea()"></p>
+        <p>enter height of trapezoid <input id="height" oninput="updateArea()"></p>
         <hr>
 
         <h2>result</h2>
-        <p>the area of the trapezoid is:</p>
+        <p id="output"></p>
     </body>
 </html>
-<script src="./madlib.js"></script>
+<script src="./area.js"></script>

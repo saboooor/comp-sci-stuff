@@ -36,7 +36,7 @@ hr {
     font-style: italic;
 }
 
-input, button {
+input {
     background-color: #121212;
     border-color: #121212;
     color: white;
@@ -44,7 +44,7 @@ input, button {
     transition: 0.1s;
 }
 
-input:hover, input:focus, button:hover {
+input:hover, input:focus {
     background-color: #3b3b3b;
     color: white;
     border-radius: 5px;
