@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <link rel="stylesheet" href="./assets/styles.css">
+  </head>
+  <body>
+    <div id="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./quiz.html" id="focused">Quiz</a>
+    </div>
+    <div id="content">
+        <h1>Pizza Quiz <span id="quizresult"></span></h1>
+        <p>What is the usual shape of a pizza? <span id="shaperesult"></span></p>
+        <input id="shape">
+        <p>What is the base of a pizza made of? <span id="baseresult"></span></p>
+        <input id="base">
+        <p>What topping does the pizza on the background of this website have? <span id="toppingresult"></span></p>
+        <input id="topping">
+        <p>What sauce does Saboor like on the side of a pizza? <span id="sideresult"></span></p>
+        <input id="side">
+        <br>
+        <br>
+        <button onclick="evalQuiz()">Submit</button>
+    </div>
+  </body>
+  <script src="./assets/quiz.js"></script>
+</html>

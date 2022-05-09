@@ -1,0 +1,91 @@
+@font-face {
+    font-family: NunitoBold;
+    src: url(./Nunito-Bold.ttf);
+}
+
+* {
+    font-family: NunitoBold;
+    transition: 0.4s;
+}
+
+html {
+    background-image: url('./pepperoni-pizza.jpg');
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+body {
+    background-color: #222222cc;
+    backdrop-filter: blur(20px);
+    border-radius: 25px;
+    color: white;
+    max-width: 1024px;
+    height: 768px;
+}
+
+#navbar {
+    text-align: center;
+    margin: 50px;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 18px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#navbar a:hover {
+    background-color: #ffffff22;
+}
+
+#navbar a#focused {
+    background-color: #ffffff22;
+    color: #dab361;
+}
+
+.btn {
+    color: white;
+    text-decoration: none;
+    background-color: #ffffff22;
+    padding: 15px 18px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.btn:hover, input:hover, button:hover, input:focus {
+    background-color: #ffffff55;
+}
+
+
+#content {
+    height: 580px;
+    padding: 0 60px 0 60px;
+    overflow: scroll;
+}
+
+#centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+    padding: 60px;
+}
+
+p {
+    white-space: pre-line;
+    color: #ffffffcc;
+}
+
+input, button {
+    color: white;
+    background-color: #ffffff22;
+    padding: 15px 18px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+}
