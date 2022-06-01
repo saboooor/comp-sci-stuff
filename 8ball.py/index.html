@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>8ball bruh</title>
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <link rel="stylesheet" href="./style.css" type="text/css">
+        <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/42164502" type="image/x-icon">
+    </head>
+    <body>
+        <h1>yoooooo</h1>
+
+        <h2>8ball</h2>
+        <label for="input">Ask a question</label>
+        <input id="input">
+        <br>
+        <br>
+        <button id="submit" pys-onClick="updateResponse">submit</button>
+
+        <h2 id="8ball">🎱 Ask me a question!</h2>
+    </body>
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-script style="display: none;">
+# Get alert module
+from js import alert
+
+# 8ball function, used to get a random answer from the array
+def updateResponse(event):
+    # check if input is empty
+    input = Element('input').element.value
+    if (input == ''):
+        alert('Please enter a question!')
+        return
+    
+    # get responses
+    ball = [
+        "Seems pretty likely",
+        "Absolutely",
+        "Definitely",
+        "I think so",
+        "Probably",
+        "The opposite is certain",
+        "Seems pretty unlikely",
+        "Absolutely not",
+        "Definitely not",
+        "I don't think so",
+        "Signs point to no",
+        "I'm not sure",
+        "That's hard to say at this time",
+        "Figure it out on your own",
+        "It is certain",
+        "It is decidedly so",
+        "Without a doubt",
+        "You may rely on it",
+        "As I see it, yes",
+        "Most likely",
+        "Outlook good",
+        "Yes",
+        "Signs point to yes",
+        "Reply hazy try again",
+        "Ask again later",
+        "Better not tell you now",
+        "Cannot predict now",
+        "Concentrate and ask again",
+        "Don't count on it",
+        "My reply is no",
+        "My sources say no",
+        "Outlook not so good",
+        "Very doubtful",
+        "No",
+        "Probably not",
+        "I don't know",
+        "Bro i'm just a ball what do you expect from me",
+        "There's plenty of doubt"
+    ]
+
+    # set a specific response to specific inputs, not case or space sensitive
+    if ('doesamagic8ballactuallywork' in Element("input").element.value.lower().replace(' ', '')):
+        return Element("8ball").element.innerText = '🎱 how dare u doubt me bro';
+    else if ('isjavascriptawesome' in Element("input").element.value.lower().replace(' ', '')):
+        return Element("8ball").element.innerText = '🎱 ya bro it's the best';
+    else if ('yousuck' in Element("input").element.value.lower().replace(' ', '')):
+        return Element("8ball").element.innerText = '🎱 why bro i'm just tryna answer ur question';
+
+    </py-script>
+</html>
