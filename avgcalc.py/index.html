@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>average bruh</title>
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <link rel="stylesheet" href="./style.css" type="text/css">
+        <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/42164502" type="image/x-icon">
+    </head>
+    <body>
+        <h1>average calculator</h1>
+
+        <h3>inputs</h3>
+        <p>enter numbers separated by commas</p>
+        <p>numbers <input id="input"></p>
+        <button id="calculate" pys-onClick="updateAvg">Calculate average</button>
+
+        <p id="output"></p>
+    </body>
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-script style="display: none;" output="output">
+# Get alert and math modules
+from js import alert
+import math
+
+# Update the average number
+def updateAvg(event):
+    # Get the values
+    input = Element('input').element.value
+    array = input.split(',')
+    
+    # Add numbers together
+    addednums = 0
+    for number in array:
+        # Check if number is a digit and alert if not
+        if not number.isdigit():
+            alert('Please enter valid numbers separated by commas.')
+            return
+        addednums += float(number)
+
+    # Calculate the average
+    avg = addednums / len(array)
+
+    # Output the average
+    Element('output').element.innerText = f'The average of the {len(array)} numbers is {avg}'
+    </py-script>
+</html>
