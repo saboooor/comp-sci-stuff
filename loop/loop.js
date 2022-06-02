@@ -4,7 +4,7 @@ for (let step = 0; step < 500; step++) {
 }
 
 // multiples of 4 from 12 to 800
-for (let step = 12; step <= 500; step+=4) {
+for (let step = 12; step <= 800; step+=4) {
     console.log(step);
 }
 
