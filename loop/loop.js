@@ -14,7 +14,7 @@ for (let step = 55; step >= 11; step-=2) {
 }
 
 // 5 + 6 + 7 + 8 + … + 48 + 49 + 50
-let sum1 = 5;
+let sum1 = 0;
 for (let step = 5; step <= 50; step++) {
     sum1 += step;
 }
