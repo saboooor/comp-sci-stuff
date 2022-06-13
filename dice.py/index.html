@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>dice roll</title>
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <link rel="stylesheet" href="./style.css" type="text/css">
+        <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/42164502" type="image/x-icon">
+    </head>
+    <body>
+        <h1>yoooooo</h1>
+
+        <h2>dice roll</h2>
+        <button id="once" pys-onClick="roll">Roll once</button><br>
+        <button id="five" pys-onClick="roll">Roll 5 times</button><br>
+        <button>Roll until Snake Eyes</button>
+        
+        <h2>roll a custom amount of times</h2>
+        <input type="number" id="amount" style="width: 10px">
+        <button id="custom" pys-onClick="customroll">Roll</button>
+    </body>
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-script src="./dice.py"></py-script>
+</html>
