@@ -14,11 +14,13 @@
         <h2>dice roll</h2>
         <button id="once" pys-onClick="roll">Roll once</button><br>
         <button id="five" pys-onClick="roll">Roll 5 times</button><br>
-        <button>Roll until Snake Eyes</button>
+        <button id="snake_eyes" pys-onClick="snake_eyes">Roll until Snake Eyes</button>
         
         <h2>roll a custom amount of times</h2>
-        <input type="number" id="amount" style="width: 10px">
+        <input type="number" id="amount" style="width: 50px">
         <button id="custom" pys-onClick="customroll">Roll</button>
+
+        <p id="result"></p>
     </body>
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
     <py-script src="./dice.py"></py-script>
